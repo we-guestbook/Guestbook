@@ -1,0 +1,43 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Blank Webapp
+
+
+From: 'an unknown organization'
+  - Javassist (http://www.javassist.org/) javassist:javassist:jar:3.11.0.GA
+
+  - FreeMarker (http://freemarker.org) org.freemarker:freemarker:jar:2.3.16
+    License: BSD-style license  (http://freemarker.org/LICENSE.txt)
+
+From: 'Apache Software Foundation' (http://www.apache.org)
+  - Struts 2 Core (http://struts.apache.org/struts2/struts2-core) org.apache.struts:struts2-core:jar:2.2.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - XWork: Core (http://struts.apache.org/struts2/xwork-core) org.apache.struts.xwork:xwork-core:jar:2.2.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'ObjectWeb' (http://www.objectweb.org/)
+  - ASM Core (http://asm.objectweb.org/asm/) asm:asm:jar:3.1
+
+  - ASM Commons (http://asm.objectweb.org/asm-commons/) asm:asm-commons:jar:3.1
+
+  - ASM Tree (http://asm.objectweb.org/asm-tree/) asm:asm-tree:jar:3.1
+
+
+From: 'OpenSymphony' (http://www.opensymphony.com)
+  - OGNL - Object Graph Navigation Library (http://ognl.org) ognl:ognl:jar:3.0.1
+
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Commons FileUpload (http://commons.apache.org/fileupload/) commons-fileupload:commons-fileupload:jar:1.2.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Commons IO (http://commons.apache.org/io/) commons-io:commons-io:jar:2.0.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Commons Lang (http://commons.apache.org/lang/) commons-lang:commons-lang:jar:2.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

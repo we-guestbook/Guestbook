@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Guestbook-WE">
+        <wb-resource deploy-path="/" source-path="/WebContent"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes/" source-path="/ImportedClasses"/>
+        <dependent-module archiveName="struts2-core-2.2.3.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/struts2-core-2.2.3/struts2-core-2.2.3">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="Guestbook-WE"/>
+        <property name="java-output-path" value="/Guestbook-WE/build/classes"/>
+    </wb-module>
+</project-modules>
