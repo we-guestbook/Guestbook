@@ -1,0 +1,8 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://struts.apache.org/dtds/tiles-config_2_0.dtd">
+
+<definition name="Login" template="/layouts/MyLayout.jsp"/>
+	<put-attribute name="pageTitle" value="Login"/>
+	<put-attribute name="header" value="/example/Header.jsp"/>
+	<put-attribute name="footer" value="/example/Footer.jsp"/>
+	<put-attribute name="body" value="/example/Login.jsp"/>
+</definition>

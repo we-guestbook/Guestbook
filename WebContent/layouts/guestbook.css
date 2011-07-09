@@ -1,0 +1,227 @@
+/* Default styles */
+
+/* At first we reset padding and margin for all html elements, 
+   to avoid different default-values in different browsers. */
+* {
+    padding:0px;
+    margin:0px;
+}
+
+
+
+/*###############################################*/
+/*   General values for some html elements       */
+/*###############################################*/
+html {
+    overflow:auto; /* Needed to suppress window scrollbar in IE */
+}
+body {
+    background-color: white;
+    color: black;
+    font-family: helevetica, arial, verdana;
+    font-size: 16px;
+    padding:20px;
+}
+img {
+    border: none; /* No border around images */
+}
+p {
+    margin-top:10px; /* Add space above and below paragraphs */
+    margin-bottom:10px; 
+}
+a {
+    color: #0000ee; /* Blue links with no underline effect */
+    text-decoration:none;
+}
+a:hover { /* Underline links when mouse is moved over the link */
+    text-decoration: underline;
+}
+a:visited { /* Visited links in a different (violett) color */
+    color: #9b0080;
+}
+h1 { 
+    font-size:180%; /* Font size and decoration for first-order headlines */
+    font-weight: bold;
+}
+h2 {
+    font-size:120%; /* Font size and decoration for second-order headlines */
+    font-weight: normal;
+    margin-top:15px; /* Add space above headline */
+}
+textarea {
+    font-family: arial; /* Instead of typewriter font */
+    font-size:90%; /* Define line-height and font-size so that we can set the height */
+    line-height:1.25em; /* of the text-area as multiple of one line-lineheight */ 
+    overflow:auto; /* Remove scroll bars in IE if not needed */
+}
+button {
+    border: solid 1px #cccccc; /* Buttons should have 1px border around them */
+    background-color: #e4e4e4;
+    height:1.8em;
+}
+
+
+
+
+
+
+/*###############################################*/
+/*   Styles that affect both pages               */
+/*###############################################*/
+
+/* Guestbook header with background-image */
+h1.guestbook_header {
+    height: 40px; /* Define size of header */
+    width: 750px;
+    padding-top:85px; /* Add padding to place the text at the bottom of the header */
+    text-indent: 10px;
+    background: url(header.png) left top no-repeat; /* Set background-image */
+    color: #505050;
+
+}
+/* Div that contains all content of the guestbook pages and paints a border around it */
+div.guestbook_body {
+    padding:10px;
+    padding-bottom:15px;
+    width:728px;
+    border: solid 1px #cccccc;
+    background-color: #f8f8f8;
+}
+/* Introduction text (directly embedded paragraph in guestbook body) */
+div.guestbook_body  > p {
+    padding-bottom:10px;
+}
+
+
+
+/*###############################################*/
+/*   Styles for guestbook.html only              */
+/*###############################################*/
+
+/* The list with guestbook entrys is modelled as a ordered list */
+div.guestbook_body  > ol {
+    list-style-type: none; /* Dont show numbers of ordered list*/
+}
+/* Guestbook entry (is a list item) */
+div.guestbook_body > ol > li {
+    margin-top: 20px; /* Paint a line above every guestbook entry */
+    border-top: 1px solid #cccccc; /* with 20px space above and below */
+    padding-top: 20px;
+}
+div.guestbook_body > ol > li:first-child {
+    margin-top: 0px;
+    border-top: none; /* Dont paint the line and dont add space for the first  */
+    padding-top: 0px; /* guestbook entry (Pseudo-class "first-child") */
+}
+/* Guestbook entry title */
+div.guestbook_body > ol > li > h2 {
+    margin-top:0px; 
+    color:#cc6600; /* Set color of guestbook entry title */
+}
+/* Guestbook entry date and author */
+div.guestbook_body > ol > li > span.entryDate,
+div.guestbook_body > ol > li > span.entryAuthor {
+    padding-bottom:10px; /* Float both spans to the left and */
+    padding-right:5px; /* add some space around them */
+    float:left; 
+    font-size:90%;
+}
+div.guestbook_body > ol > li > span.entryAuthor:before {
+    content:"By "; /* Add text "By " before every author */
+}
+div.guestbook_body > ol > li > span.entryAuthor:after {
+    content:", "; /* Add a comma after the author */
+}
+
+/* Guestbook entry text */
+div.guestbook_body > ol > li > div.entryText {
+    clear:both; /* End floating environment from date- and author-spans */ 
+} 
+div.guestbook_body > ol > li > div.entryText:first-letter {
+    font-family: times, serif; /* The first letter of the text should be displayed */
+    font-size:150%; /* bigger and in Times New Roman. */
+}
+
+
+
+
+
+
+/*###############################################*/
+/*   Styles for addEntry.html only               */
+/*###############################################*/
+
+/* Attention text on the add entry page */
+div.guestbook_body span.attention {
+    font-size:80%;
+    display:block;
+    color: #cc0000;
+    margin-top:10px;
+}
+/* Every form field is placed on this div */
+div.guestbook_body > form > div.formField {
+    margin-bottom:10px; /* Add 10px space below every form field */
+}
+/* The description label for the form fields */
+div.guestbook_body > form > div.formField > label {
+    display:block; /* Float the label to the left and make it 120px wide */ 
+    width:120px;   /* By doing this we achieve, that every labels has the same */
+    float:left;    /* width and the input fields get ordered along one vertical line*/
+    text-align:right;
+    padding-right:10px;
+}
+/* The input fields */
+div.guestbook_body > form > div.formField > input,
+div.guestbook_body > form > div.formField > textarea {
+    width:300px; /* Give the text fields the same width */
+}
+div.guestbook_body > form > div.formField > textarea {
+    height:8.75em; /* Make text area 7 lines high (7 times 1.25 (lineheight) = 8.75) */
+}
+div.guestbook_body > form > div.formField > button {
+    position:relative; /* The submit button: */
+    width:100px;
+    left:332px;
+}
+
+
+
+/*###############################################*/
+/*   Styles for Search-Results only              */
+/*###############################################*/
+div.searchResults {
+    margin-top:10px;
+}
+div.searchHit {
+    position:relative;
+    border:solid 1px #cccccc;
+    border-top:none;
+    background-color: #ffffff;
+    min-height:70px;
+}
+div.searchHit:first-child {
+    border-top:solid 1px #cccccc;
+}
+div.searchHit div.searchHit_author {
+    position:absolute;
+    top:0px;
+    left:0px;
+    text-indent:7px;
+}
+div.searchHit div.searchHit_date {
+    position:absolute;
+    top:20px;
+    left:0px;
+    text-indent:7px; 
+}
+div.searchHit div.searchHit_text {
+    margin-left:150px;
+    text-indent:10px;
+    background-color: #eeeeee;
+    min-height:70px;
+}
+
+div.searchResults span.error {
+    color: #ff0000;
+}
+
